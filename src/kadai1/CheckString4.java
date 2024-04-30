@@ -1,4 +1,4 @@
-package kadai01;
+package kadai1;
 
 import java.util.Random;
 
