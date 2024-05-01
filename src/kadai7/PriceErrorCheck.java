@@ -12,16 +12,18 @@ public class PriceErrorCheck {
 		System.out.print("価格：");
 
 		//整数チェック
-		try { 
+		try {
 			price = scan.nextInt();
-		} catch () {
-			
+		} catch (Exception e) {
+			System.out.println("整数で入力して下さい");
 		}
 
 		//範囲チェック
-
-		System.out.println(price + "円を登録しました");
-
+		if (price < 0) {
+			System.out.println("マイナスの値です");
+		} else {
+			System.out.println(price + "円を登録しました");
+		}
 	}
 
 }
